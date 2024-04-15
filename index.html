@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess the Flag</title>
+    <link rel="icon" href="/tabImg.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="landing">
+      <h2 class="header">Welcome To Guess The Flag</h2>
+
+      <div class="rulesWrapper">
+        <h3 class="h3Rules">What are the rules?</h3>
+        <ol>
+          <li>The name of the flag is displayed.</li>
+          <li>Pick the correct flag out of 3.</li>
+          <li>You have 3 lives.</li>
+          <li>Try and get your highest score.</li>
+        </ol>
+        <p class="emoji">&#128516;</p>
+      </div>
+      <button id="startBtn">Start</button>
+    </section>
+    <main>
+      <nav>
+        <div class="faDiv info">
+          <i class="fa-solid fa-info"></i>
+        </div>
+        <div class="faDiv history">
+          <i class="fa-solid fa-book"></i>
+        </div>
+      </nav>
+      <div class="infoDiv">
+        <h4>Welcome to the Beta Version of the Country Quiz! 🚀</h4>
+        <p class="theParagraphBeta">
+          Please note that this quiz is currently in beta, so you may encounter
+          occasional bugs such as seeing double or triple of the same flags, or
+          flags not loading due to slow API response times. 🐛 Despite these
+          potential issues, we hope you have a great time testing your
+          knowledge! If you encounter any bugs, feel free to let us know so we
+          can work on fixing them. Happy quizzing! 🌍🧠 &#128518;
+        </p>
+      </div>
+      <div class="historyDiv hiddenHistory">
+        <div id="highScore"></div>
+        <div id="stepGraph"></div>
+      </div>
+      <div class="wrapperLivesScore">
+        <h2 id="score">score:</h2>
+        <h2 id="lifeLines"></h2>
+      </div>
+      <div id="wrapperFlags"></div>
+      <h1 id="nameOfCountry"></h1>
+      <div id="buttonWrapper">
+        <button id="pickBtn">Pick flag</button>
+        <button id="sureBtn">Are You Sure?</button>
+        <button id="nextBtn">Next</button>
+        <button id="againBtn">Play Again?</button>
+      </div>
+    </main>
+
+    <script src="js.js"></script>
+  </body>
+</html>
